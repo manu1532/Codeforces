@@ -5,15 +5,15 @@ void solve(){
     int n;
     cin >> n;
     
-    int avg = n, a = n-1;
+    int b = n, a = n-1;
     int res = 2;
     
     cout << res << endl;
     
     for(int i=0; i<n-1; i++){
-        cout << a << " " << avg << endl;
-        avg = round((a+avg)/2.0);
-        a--;
+        cout << a << " " << b << endl;
+        b = round((a+avg)/2.0);
+        a = a-1;
         
     }
     return ;
